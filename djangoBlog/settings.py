@@ -124,5 +124,6 @@ STATIC_URL = '/static/'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4' #add bootstrap form to crispy_forms
 
-#create a redirect to the login url after a sucessfull login
+#create a redirect to the login url after a sucessful login
 LOGIN_REDIRECT_URL = 'blog-home'
+LOGIN_URL = 'login'
