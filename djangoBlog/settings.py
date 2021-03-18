@@ -134,3 +134,12 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4' #add bootstrap form to crispy_forms
 #create a redirect to the login url after a sucessful login
 LOGIN_REDIRECT_URL = 'blog-home'
 LOGIN_URL = 'login'
+
+#set send email with gmail variables
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = os.environ.get('GOOGLE_USER')
+EMAIL_HOST_PASSWORD = os.environ.get('GOOGLE_PASS')
+
